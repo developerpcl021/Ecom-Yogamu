@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+
+    <script src="https://wp.yogamu.in/wp-content/themes/yogamu/assets/js/tailwind-local.js"></script>
+    <meta name='robots' content='max-image-preview:large' />
+
+    <link rel='stylesheet' id='style-css-css' href='https://wp.yogamu.in/wp-content/themes/yogamu/style.css?ver=1.0'
+        type='text/css' media='all' />
+
+    <title>Yogamu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            /* list-style-type: none; */
+            font-family: "Varela", sans-serif;
+            scroll-behavior: smooth;
+        }
+
+
+        .slick-prev:before,
+        .slick-next:before {
+            display: none !important;
+        }
+
+        .slick-slide {
+            margin: 0 12px !important;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .slick-prev,
+        .slick-next {
+            height: 52px !important;
+            width: 52px !important;
+        }
+
+        .slick-prev {
+            left: 0% !important;
+        }
+    </style>
+    <script src="assets/js/tailwind.config.js"></script>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <div class="max-w-[1140px] top-0 left-[-768px] md:hidden ease-in-out duration-300 bg-primary text-white z-[999] flex items-start justify-between fixed mx-auto p-6 w-3/4 h-full"
+        id="header">
+
+        <ul id="menu-navbar" class="text-white ">
+            <li id="menu-item-1384"
+                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-1384"><a
+                    href="/index.php/demo-seven/" aria-current="page">
+            <li class=" mb-8  duration-300 ease-in-out">Home</li></a></li>
+            <li id="menu-item-1385" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1385"><a
+                    href="/index.php/about-seven">
+            <li class=" mb-8  duration-300 ease-in-out">About Us</li></a></li>
+            <li id="menu-item-1387" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1387"><a
+                    href="/index.php/product-seven/">
+            <li class=" mb-8  duration-300 ease-in-out">Product</li></a></li>
+            <li id="menu-item-1388" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1388"><a
+                    href="/index.php/blog-seven/">
+            <li class=" mb-8  duration-300 ease-in-out">Blog</li></a></li>
+            <li id="menu-item-1386" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1386"><a
+                    href="/index.php/contact-seven/">
+            <li class=" mb-8  duration-300 ease-in-out">Contact Us</li></a></li>
+        </ul>
+
+        <button id="hide_header">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12L7 7M12 12L17 17M12 12L17 7M12 12L7 17" stroke="white" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <nav class="sticky bg-white top-0 start-0 z-[99] " id="desktop_header">
+        <div class="max-w-[1140px] z-20 relative mx-auto py-5 px-6 ease-in-out duration-300">
+
+            <div class="flex items-center justify-between">
+                <a href="" class="p-2">
+                    <img src="/wp-content/uploads/2024/09/logo-4.png" alt="Inspiration Station" loading="lazy"
+                        class="object-contain max-w-[120px] mx-auto "> </a>
+
+                <ul id="menu-navbar-1" class="text-black items-center gap-x-4 lg:gap-x-5 hidden md:flex">
+                    <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-1384">
+                        <a href="/index.php/demo-seven/" aria-current="page">
+                    <li class="hover:text-primary  duration-300 ease-in-out text-[15px] lg:text-[16px]">Home</li></a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1385"><a
+                            href="/index.php/about-seven">
+                    <li class="hover:text-primary  duration-300 ease-in-out text-[15px] lg:text-[16px]">About Us</li>
+                    </a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1387"><a
+                            href="/index.php/product-seven/">
+                    <li class="hover:text-primary  duration-300 ease-in-out text-[15px] lg:text-[16px]">Product</li></a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1388"><a
+                            href="/index.php/blog-seven/">
+                    <li class="hover:text-primary  duration-300 ease-in-out text-[15px] lg:text-[16px]">Blog</li></a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1386"><a
+                            href="/index.php/contact-seven/">
+                    <li class="hover:text-primary  duration-300 ease-in-out text-[15px] lg:text-[16px]">Contact Us</li>
+                    </a></li>
+                </ul>
+
+
+                <button
+                    class="bg-primary hidden md:flex text-white font-semibold rounded-full  px-6 lg:px-8 py-3 border border-primary hover:bg-transparent hover:text-primary group duration-300 ease-in-out items-center gap-3">
+                    SIGN UP
+                    <span class=""><svg class="" width="34" height="16" viewBox="0 0 34 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="group-hover:fill-primary duration-300 ease-in-out"
+                                d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM33.7071 8.70711C34.0976 8.31658 34.0976 7.68342 33.7071 7.29289L27.3431 0.928932C26.9526 0.538408 26.3195 0.538408 25.9289 0.928932C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM1 9H33V7H1V9Z"
+                                fill="white" />
+                        </svg>
+                    </span>
+                </button>
+                <button class="md:hidden" id="show_header">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 8H18M6 12H18M6 16H18" stroke="black" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero   -->
+
+    <div class="bg-[#fffbe3] relative h-full py-5 md:py-0">
+        <div
+            class="relative md:h-screen px-6 after:w-1/2 after:h-full after:left-0 after:top-0 md:after:absolute after:content-[''] after:bg-white after:rounded-r-full after:z-[2]">
+
+            <section class="relative z-20 h-[calc(100%-90px)] mt-6 md:mt-0" id="hero_section">
+                <div class="max-w-[1140px] h-full mx-auto">
+                    <div class="md:flex h-full justify-between items-center space-y-10 sm:space-y-16">
+                        <div class="md:max-w-sm">
+                            <h1
+                                class="text-[30px] xsm:text-[40px] sm:text-[70px] lg:text-[100px] leading-[120%] font-bold mix-blend-color">
+                                Your Wellness Partner
+
+                            </h1>
+                            <button
+                                class="bg-primary text-white font-semibold rounded-full px-6 sm:px-8 py-2 sm:py-3 border border-primary hover:bg-transparent hover:text-primary group duration-300 ease-in-out mt-5 md:mt-10 flex items-center gap-3">
+                                Get Started <span class=""><svg class="" width="34" height="16" viewBox="0 0 34 16"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="group-hover:fill-primary duration-300 ease-in-out"
+                                            d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM33.7071 8.70711C34.0976 8.31658 34.0976 7.68342 33.7071 7.29289L27.3431 0.928932C26.9526 0.538408 26.3195 0.538408 25.9289 0.928932C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM1 9H33V7H1V9Z"
+                                            fill="white" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="md:max-w-[314px] w-full">
+                            <h3>POPULAR CLASSES</h3>
+                            <div
+                                class="mt-5 xsm:mt-8 w-full gap-y-6 xsm:gap-y-8 gap-x-5 md:gap-12 grid grid-cols-1 xsm:grid-cols-2 sm:grid-cols-2 md:grid-cols-1 justify-center">
+
+                                <div
+                                    class="bg-white w-full rounded-[16px] relative ps-5 flex items-center max-w-[314px] min-h-[116px] sm:min-h-[142px] h-full shadow-md mx-auto">
+                                    <h3 class="text-black max-w-[108px] font-bold text-[16px] sm:text-[24px]">
+                                        Yoga Breakwork </h3>
+                                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/curve.png" alt="curve"
+                                        class="absolute top-0 end-0 max-w-[90px] xsm:max-w-[100px] sm:max-w-[120px] sm:max-w-full" />
+                                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/meditation-girl.png"
+                                        class="absolute -top-3 sm:-top-10 end-0 max-w-[120px] xsm:max-w-[120px] sm:max-w-full"
+                                        alt="meditation-girl" />
+                                </div>
+
+                                <div
+                                    class="bg-white w-full rounded-[16px] relative ps-5 flex items-center max-w-[314px] min-h-[116px] sm:min-h-[142px] h-full shadow-md mx-auto">
+                                    <h3 class="text-black max-w-[108px] font-bold text-[16px] sm:text-[24px]">
+                                        Yoga Ashtanga </h3>
+                                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/curve.png" alt="curve"
+                                        class="absolute top-0 end-0 max-w-[90px] xsm:max-w-[100px] sm:max-w-[120px] sm:max-w-full" />
+                                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/astanga.png"
+                                        class="absolute -top-3 sm:-top-10 end-0 max-w-[120px] xsm:max-w-[120px] sm:max-w-full"
+                                        alt="meditation-girl" />
+                                </div>
+
+                                <div
+                                    class="bg-white w-full rounded-[16px] relative ps-5 flex items-center max-w-[314px] min-h-[116px] sm:min-h-[142px] h-full shadow-md mx-auto">
+                                    <h3 class="text-black max-w-[108px] font-bold text-[16px] sm:text-[24px]">
+                                        Dynamic Meditation </h3>
+                                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/curve.png" alt="curve"
+                                        class="absolute top-0 end-0 max-w-[90px] xsm:max-w-[100px] sm:max-w-[120px] sm:max-w-full" />
+                                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/meditation.png"
+                                        class="absolute -top-3 sm:-top-10 end-0 max-w-[120px] xsm:max-w-[120px] sm:max-w-full"
+                                        alt="meditation-girl" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/sunshine.png" alt="sunshine"
+                class="absolute hidden md:block bottom-0 md:top-[55%] md:-translate-y-1/2 left-1/2 -translate-x-1/2 z-[1]" />
+            <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/Design-ohne-Titel-16-e1726902630778.png"
+                alt="yoga_pose"
+                class="md:absolute hidden md:block top-[55%] z-10 md:-translate-y-1/2 md:-translate-x-1/2 md:left-1/2 mx-auto" />
+        </div>
+    </div>
+
+
+
+    <!-- Services Section -->
+    <section class="pt-16 md:pt-20 pb-12 md:pb-16">
+        <div class="max-w-7xl px-6 mx-auto">
+            <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+                <div class="space-y-3 text-center bg-white shadow-md p-5 rounded-[20px] max-w-[360px] mx-auto">
+                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/energy.png" alt="Clock" class="mx-auto" />
+                    <h4 class="text-[20px] font-bold"> Increased Energy and Vitality </h4>
+                    <p class="leading-[160%] opacity-70">
+                        Yoga boosts energy levels by enhancing circulation, breathing capacity, and reducing fatigue.
+                    </p>
+                </div>
+
+                <div class="space-y-3 text-center bg-white shadow-md p-5 rounded-[20px] max-w-[360px] mx-auto">
+                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/meditation-6.png" alt="Clock"
+                        class="mx-auto" />
+                    <h4 class="text-[20px] font-bold">Mind-Body Connection </h4>
+                    <p class="leading-[160%] opacity-70">
+                        Yoga encourages a focus on breath and movement, fostering a deeper connection between the mind
+                        and body. </p>
+                </div>
+
+                <div class="space-y-3 text-center bg-white shadow-md p-5 rounded-[20px] max-w-[360px] mx-auto">
+                    <img src="https://wp.yogamu.in/wp-content/uploads/2024/09/team.png" alt="Clock" class="mx-auto" />
+                    <h4 class="text-[20px] font-bold">Improved Flexibility </h4>
+                    <p class="leading-[160%] opacity-70">
+                        Regular practice helps stretch and lengthen muscles, increasing overall flexibility and range of
+                        motion </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  About Section  -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-6 items-center">
+                <div>
+                    <img class="mx-auto max-w-[350px] w-full lg:max-w-auto"
+                        src="https://wp.yogamu.in/wp-content/uploads/2024/09/about_us.png" alt="yoga girl" />
+                </div>
+                <div>
+                    <p class="text-primary"> About Us</p>
+                    <h2 class="font-bold text-[28px] xsm:text-[32px] sm:text-[40px] leading-[140%] mt-3">
+                        We Are Giving <br> Best Quality <span class="text-primary"> Services</span>
+                    </h2>
+                    <p class="md:max-w-[550px] mt-2 sm:mt-6 opacity-50 leading-[160%]">
+                        Yoga is a holistic practice that combines the body, breath, and mind to improve overall health.
+                        It originated but today it&#039;s also popular as a way to promote physical and mental
+                        well-being. </p>
+                    <ul
+                        class="grid xsm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 items-start justify-start list-image-[url(https://wp.yogamu.in/wp-content/uploads/2024/09/dot.png)]  mt-3 sm:mt-6 gap-4 lg:gap-6 sm:text-[18px] font-bold ms-6">
+                        <li class="lg:max-w-[250px]">We Are Leading in Yoga Class</li>
+                        <li class="lg:max-w-[250px]">Every Class Have Expert Trainer</li>
+                        <li class="lg:max-w-[250px]">Satisfied Member Testimonials</li>
+                        <li class="lg:max-w-[250px]">Complete Facilities & Best Quality</li>
+                    </ul>
+
+                    <button
+                        class="bg-primary mt-6 flex text-white font-semibold rounded-full px-8 py-3 border border-primary hover:bg-transparent hover:text-primary group duration-300 ease-in-out items-center gap-3">
+                        Read More <span class="">
+                            <svg class="" width="34" height="16" viewBox="0 0 34 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="group-hover:fill-primary duration-300 ease-in-out"
+                                    d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9V7ZM33.7071 8.70711C34.0976 8.31658 34.0976 7.68342 33.7071 7.29289L27.3431 0.928932C26.9526 0.538408 26.3195 0.538408 25.9289 0.928932C25.5384 1.31946 25.5384 1.95262 25.9289 2.34315L31.5858 8L25.9289 13.6569C25.5384 14.0474 25.5384 14.6805 25.9289 15.0711C26.3195 15.4616 26.9526 15.4616 27.3431 15.0711L33.7071 8.70711ZM1 9H33V7H1V9Z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Courses Section -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-7xl px-6 mx-auto">
+            <p class="text-primary  lg:text-start">Our Class</p>
+            <div class="md:flex gap-6 justify-between md:items-center mb-12  lg:text-start">
+                <h2 class="font-bold text-[28px] xsm:text-[32px] sm:text-[40px] leading-[140%]">
+                    Our Best <span class="text-primary"> Classes </span>
+                    <!-- 			  <span class="text-primary">Classes</span> -->
+                </h2>
+                <p class=" md:max-w-[450px] xl:max-w-[550px] opacity-50 leading-[160%] mx-auto mt-3">
+                    A yoga class offers guided sessions that blend physical postures, breathing techniques, and
+                    mindfulness to promote strength, flexibility, and relaxation </p>
+                <button
+                    class="bg-primary text-white max-w-[150px] w-full font-semibold rounded-full px-8 py-3 border border-primary hover:bg-transparent hover:text-primary group duration-300 ease-in-out h-full mt-5">
+                    See More </button>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 justify-center gap-6">
+                <div class="max-w-[400px] md:max-w-full">
+                    <img class="w-full rounded-xl"
+                        src="https://wp.yogamu.in/wp-content/uploads/2024/09/AdobeStock_288552113.jpg" alt="courses" />
+                    <div
+                        class="bg-white shadow-md rounded-xl max-w-[380px] mx-auto px-6 pb-6 relative -translate-y-1/4">
+                        <span class="block -translate-y-1/2">
+
+                            <img class="w-16 h-16"
+                                src="https://wp.yogamu.in/wp-content/uploads/2024/09/hatha-yoga-1.png" />
+                        </span>
+                        <h4 class="text-[20px] font-bold -mt-5">Hatha Yoga </h4>
+                        <p class="opacity-60 mt-1">
+                            Yoga is a holistic practice that combines the body, breath, and mind to improve overall
+                            health. </p>
+                        <a href="" class="text-primary inline-block mt-1">Read More </a>
+                    </div>
+                </div>
+                <div class="max-w-[400px] md:max-w-full">
+                    <img class="w-full rounded-xl"
+                        src="https://wp.yogamu.in/wp-content/uploads/2024/09/AdobeStock_462376162.jpg" alt="courses" />
+                    <div
+                        class="bg-white shadow-md rounded-xl max-w-[380px] mx-auto px-6 pb-6 relative -translate-y-1/4">
+                        <span class="block -translate-y-1/2">
+
+                            <img class="w-16 h-16"
+                                src="https://wp.yogamu.in/wp-content/uploads/2024/09/meditation-6.png" />
+                        </span>
+                        <h4 class="text-[20px] font-bold -mt-5">Ashtanga Yoga </h4>
+                        <p class="opacity-60 mt-1">
+                            A sequence of continuous movements and postures that focuses on breath control and the
+                            limbs. Vinyasa yoga includes </p>
+                        <a href="" class="text-primary inline-block mt-1">Read More </a>
+                    </div>
+                </div>
+                <div class="max-w-[400px] md:max-w-full">
+                    <img class="w-full rounded-xl"
+                        src="https://wp.yogamu.in/wp-content/uploads/2024/04/AdobeStock_599132701-scaled.jpeg"
+                        alt="courses" />
+                    <div
+                        class="bg-white shadow-md rounded-xl max-w-[380px] mx-auto px-6 pb-6 relative -translate-y-1/4">
+                        <span class="block -translate-y-1/2">
+
+                            <img class="w-16 h-16" src="https://wp.yogamu.in/wp-content/uploads/2024/09/Yin-yoga.png" />
+                        </span>
+                        <h4 class="text-[20px] font-bold -mt-5">Power Yoga </h4>
+                        <p class="opacity-60 mt-1">
+                            Power Yoga is a dynamic and fast-paced style of yoga that focuses on building strength,
+                            flexibility, and stamina . </p>
+                        <a href="" class="text-primary inline-block mt-1">Read More </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonial Slider -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-6 md:flex gap-6 justify-between">
+            <!-- <img class="absolute top-0 end-0 z-10" src="assets/images/DotedCircle.svg" alt="DotedCircle"> -->
+            <div class="text-start md:w-4/12">
+                <p class="text-primary">Testimonial</p>
+                <h2 class="font-bold text-[28px] xsm:text-[32px] sm:text-[40px] leading-[140%] mt-3">
+                    What Our Students Have to Say </h2>
+                <span class="inline-block"><svg width="89" height="15" viewBox="0 0 89 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M89 13.4962C85.066 9.45215 78.4915 6.01154 70.1079 3.60948C61.7243 1.20742 51.9081 -0.0481946 41.9007 0.0014153C31.8932 0.0510252 22.144 1.40363 13.8858 3.88819C8.57342 5.48647 4.79332 7.78013 1.15603 10.1239C-0.78075 11.372 -0.0869775 14.5662 2.1997 14.8487V14.8487C2.96799 14.9436 3.72518 14.6497 4.30509 14.1368C7.54313 11.2735 13.1578 9.17806 19.2645 7.3408C25.9688 5.32374 33.8836 4.22565 42.0081 4.18537V4.18537C57.432 4.10891 73.5437 5.66746 87.399 12.4449C88.106 12.7908 88.6558 13.1424 89 13.4962Z"
+                            fill="#19B69C" />
+                    </svg>
+                </span>
+
+                <p class="md:max-w-[550px] mt-2 sm:mt-4 opacity-50 leading-[160%]">
+                    A yoga testimonial highlights personal experiences of individuals who have benefited from yoga,
+                    sharing how it has improved their physical, mental, and emotional well-being </p>
+                <div class="relative flex mt-10 hidden md:block">
+                    <button type="button" class="w-full inline-block h-full slick-prev left-0">
+                        <img class="w-full" src="https://wp.yogamu.in/wp-content/uploads/2024/09/leftArrow.png"
+                            alt="leftArrow" />
+                    </button>
+                    <button type="button" class="w-full inline-block text-white h-full slick-next left-[80px]">
+                        <img class="w-full" src="https://wp.yogamu.in/wp-content/uploads/2024/09/rightArrow.png"
+                            alt="rightArrow" />
+                    </button>
+                </div>
+            </div>
+
+            <div class="testimonial_slider md:w-8/12 xl:w-7/12">
+                <div class="bg-gray-100 rounded-xl my-3 shadow-md px-3 py-8 lg:px-6 lg:py-12 text-center h-full">
+                    <img class="max-w-20 mx-auto" src="https://wp.yogamu.in/wp-content/uploads/2024/09/image1.png"
+                        alt="user" />
+                    <p class="my-5 opacity-50 leading-[160%]">
+                        Practicing yoga regularly has improved my flexibility and reduced my stress. </p>
+                    <img class="mx-auto" src="https://wp.yogamu.in/wp-content/uploads/2024/09/Stars.png" alt="stars" />
+                    <h4 class="text-[20px] font-bold mt-2"> John</h4>
+                    <p class="opacity-50"> CEO </p>
+                </div>
+                <div class="bg-gray-100 rounded-xl my-3 shadow-md px-3 py-8 lg:px-6 lg:py-12 text-center h-full">
+                    <img class="max-w-20 mx-auto" src="https://wp.yogamu.in/wp-content/uploads/2024/09/image-6.png"
+                        alt="user" />
+                    <p class="my-5 opacity-50 leading-[160%]">
+                        Yoga has helped me manage my work-life balance better. It&#039;s now an essential part of my
+                        daily routine </p>
+                    <img class="mx-auto" src="https://wp.yogamu.in/wp-content/uploads/2024/09/Stars.png" alt="stars" />
+                    <h4 class="text-[20px] font-bold mt-2"> Lora</h4>
+                    <p class="opacity-50"> Student</p>
+                </div>
+                <div class="bg-gray-100 rounded-xl my-3 shadow-md px-3 py-8 lg:px-6 lg:py-12 text-center h-full">
+                    <img class="max-w-20 mx-auto" src="https://wp.yogamu.in/wp-content/uploads/2024/09/image-2.png"
+                        alt="user" />
+                    <p class="my-5 opacity-50 leading-[160%]">
+                        Yoga has transformed my life by helping me find balance, strength, and inner peace. </p>
+                    <img class="mx-auto" src="https://wp.yogamu.in/wp-content/uploads/2024/09/Stars.png" alt="stars" />
+                    <h4 class="text-[20px] font-bold mt-2"> Jessica Wilson</h4>
+                    <p class="opacity-50"> Yoga Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Blog Section -->
+    <section class="py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="md:text-center">
+                <p class="text-primary"></p>
+                <h2 class="font-bold text-[28px] xsm:text-[32px] sm:text-[40px] leading-[140%] mt-3">
+                    Best Yoga <span class="text-primary"> Content </span> </h2>
+                <p class="md:max-w-[550px] mt-2 sm:mt-4 opacity-50 leading-[160%] mx-auto">
+                    A yoga blog offers insights on poses, mindfulness, and holistic well-being, guiding both beginners
+                    and seasoned practitioners. </p>
+            </div>
+
+            <!-- Card  -->
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
+                <a href="/singlepost.html" class="bg-white shadow-md rounded-xl max-w-[400px] mx-auto relative">
+                    <div class="top-5 end-4 absolute">
+                        <span class="bg-black text-white rounded-full px-4 py-2 text-[13px]">Fitness</span>
+                    </div>
+                    <img class="w-full rounded-t-xl max-h-[200px] h-full object-cover "
+                        src="https://wp.yogamu.in/wp-content/uploads/2024/04/AdobeStock_542875603-1.jpeg" alt="about" />
+                    <div class="px-6 pb-4">
+                        <div class="-translate-y-1/2 space-x-2">
+                            <span class="bg-black text-white rounded-full px-3 py-2 text-[14px]">16 December 2024</span>
+                        </div>
+                        <p class="text-[14px]">
+                            <span class="opacity-60">By </span>
+                            <span class="font-bold">John Doe</span>
+                            <span class="opacity-60"> 1Hr Ago </span>
+                        </p>
+                        <h4 class="text-[18px] lg:text-[24px] font-bold mt-2">
+                            The Benefits of Yoga for Mental Health </h4>
+                        <p class="mt-1 opacity-50">
+                            Explore how yoga helps reduce anxiety, stress, and depression. Include scientific research
+                            supporting these benefits. </p>
+                    </div>
+                </a>
+                <a href="/singlepost.html" class="bg-white shadow-md rounded-xl max-w-[400px] mx-auto relative">
+                    <div class="top-5 end-4 absolute">
+                        <span class="bg-black text-white rounded-full px-4 py-2 text-[13px]">Fitness</span>
+                    </div>
+                    <img class="w-full rounded-t-xl max-h-[200px] h-full object-cover "
+                        src="https://wp.yogamu.in/wp-content/uploads/2024/09/AdobeStock_290962432-2.jpg" alt="about" />
+                    <div class="px-6 pb-4">
+                        <div class="-translate-y-1/2 space-x-2">
+                            <span class="bg-black text-white rounded-full px-3 py-2 text-[14px]">16 December 2024</span>
+                        </div>
+                        <p class="text-[14px]">
+                            <span class="opacity-60">By </span>
+                            <span class="font-bold">John Doe</span>
+                            <span class="opacity-60"> 1Hr Ago </span>
+                        </p>
+                        <h4 class="text-[18px] lg:text-[24px] font-bold mt-2">
+                            10 Yoga Poses to Improve Flexibility and Posture </h4>
+                        <p class="mt-1 opacity-50">
+                            Share tips on practicing yoga for people with busy lives, offering short routines for
+                            different times of the day. </p>
+                    </div>
+                </a>
+                <a href="/singlepost.html" class="bg-white shadow-md rounded-xl max-w-[400px] mx-auto relative">
+                    <div class="top-5 end-4 absolute">
+                        <span class="bg-black text-white rounded-full px-4 py-2 text-[13px]">Fitness</span>
+                    </div>
+                    <img class="w-full rounded-t-xl max-h-[200px] h-full object-cover "
+                        src="https://wp.yogamu.in/wp-content/uploads/2024/09/blog.png" alt="about" />
+                    <div class="px-6 pb-4">
+                        <div class="-translate-y-1/2 space-x-2">
+                            <span class="bg-black text-white rounded-full px-3 py-2 text-[14px]">16 December 2024</span>
+                        </div>
+                        <p class="text-[14px]">
+                            <span class="opacity-60">By </span>
+                            <span class="font-bold">John Doe</span>
+                            <span class="opacity-60"> 1Hr Ago </span>
+                        </p>
+                        <h4 class="text-[18px] lg:text-[24px] font-bold mt-2">
+                            How to Get Into Fitness From Instantly </h4>
+                        <p class="mt-1 opacity-50">
+                            Yoga is a holistic practice that combines the body, breath, and mind to improve overall
+                            health. </p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-10 pt-10  bg-[#E7F6F5]">
+        <div class="max-w-7xl mx-auto md:text-center px-6 ">
+            <a href="" class="p-2 inline-block">
+                <img src="/wp-content/uploads/2024/09/logo-4.png" alt="Inspiration Station" loading="lazy"
+                    class="object-contain max-w-[120px] mx-auto "> </a>
+            <h2 class="font-bold text-[28px] xsm:text-[32px] sm:text-[40px] leading-[140%] ">
+                Invest In Your Health
+            </h2>
+            <p class="mt-2 opacity-60">
+                Yoga is a holistic practice that combines the improve overall health. </p>
+
+
+            <div class="flex flex-col gap-6 sm:flex-row md:items-center  sm:justify-between mt-20 mb-5">
+                <ul id="menu-navbar-2" class="flex flex-wrap  items-center gap-5 md:justify-center">
+                    <li
+                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-1384">
+                        <a href="/index.php/demo-seven/" aria-current="page">
+                    <li class="duration-300 ease-in-out hover:text-primary opacity-70 hover:opacity-100">Home</li></a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1385"><a
+                            href="/index.php/about-seven">
+                    <li class="duration-300 ease-in-out hover:text-primary opacity-70 hover:opacity-100">About Us</li>
+                    </a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1387"><a
+                            href="/index.php/product-seven/">
+                    <li class="duration-300 ease-in-out hover:text-primary opacity-70 hover:opacity-100">Product</li>
+                    </a></li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1388"><a
+                            href="/index.php/blog-seven/">
+                    <li class="duration-300 ease-in-out hover:text-primary opacity-70 hover:opacity-100">Blog</li></a>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1386"><a
+                            href="/index.php/contact-seven/">
+                    <li class="duration-300 ease-in-out hover:text-primary opacity-70 hover:opacity-100">Contact Us</li>
+                    </a></li>
+                </ul>
+                <div class="flex item-center md:justify-center gap-3">
+                    <a class="p-2 bg-white border border-white hover:border-primary duration-300 ease-in-out rounded-full"
+                        href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><svg width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z"
+                                fill="#14BFB1" />
+                        </svg>
+                    </a>
+                    <a class="p-2 bg-white border border-white hover:border-primary duration-300 ease-in-out rounded-full"
+                        href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><svg width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.0276 2C14.1526 2.003 14.7236 2.009 15.2166 2.023L15.4106 2.03C15.6346 2.038 15.8556 2.048 16.1226 2.06C17.1866 2.11 17.9126 2.278 18.5496 2.525C19.2096 2.779 19.7656 3.123 20.3216 3.678C20.8303 4.17773 21.2238 4.78247 21.4746 5.45C21.7216 6.087 21.8896 6.813 21.9396 7.878C21.9516 8.144 21.9616 8.365 21.9696 8.59L21.9756 8.784C21.9906 9.276 21.9966 9.847 21.9986 10.972L21.9996 11.718V13.028C22.002 13.7574 21.9944 14.4868 21.9766 15.216L21.9706 15.41C21.9626 15.635 21.9526 15.856 21.9406 16.122C21.8906 17.187 21.7206 17.912 21.4746 18.55C21.2238 19.2175 20.8303 19.8223 20.3216 20.322C19.8219 20.8307 19.2171 21.2242 18.5496 21.475C17.9126 21.722 17.1866 21.89 16.1226 21.94L15.4106 21.97L15.2166 21.976C14.7236 21.99 14.1526 21.997 13.0276 21.999L12.2816 22H10.9726C10.2429 22.0026 9.51312 21.9949 8.78359 21.977L8.58959 21.971C8.3522 21.962 8.11487 21.9517 7.87759 21.94C6.81359 21.89 6.08759 21.722 5.44959 21.475C4.78242 21.2241 4.17803 20.8306 3.67859 20.322C3.16954 19.8224 2.7757 19.2176 2.52459 18.55C2.27759 17.913 2.10959 17.187 2.05959 16.122L2.02959 15.41L2.02459 15.216C2.00616 14.4868 1.99782 13.7574 1.99959 13.028V10.972C1.99682 10.2426 2.00416 9.5132 2.02159 8.784L2.02859 8.59C2.03659 8.365 2.04659 8.144 2.05859 7.878C2.10859 6.813 2.27659 6.088 2.52359 5.45C2.77529 4.7822 3.16982 4.17744 3.67959 3.678C4.17875 3.16955 4.78278 2.77607 5.44959 2.525C6.08759 2.278 6.81259 2.11 7.87759 2.06C8.14359 2.048 8.36559 2.038 8.58959 2.03L8.78359 2.024C9.51278 2.00623 10.2422 1.99857 10.9716 2.001L13.0276 2ZM11.9996 7C10.6735 7 9.40174 7.52678 8.46406 8.46447C7.52638 9.40215 6.99959 10.6739 6.99959 12C6.99959 13.3261 7.52638 14.5979 8.46406 15.5355C9.40174 16.4732 10.6735 17 11.9996 17C13.3257 17 14.5974 16.4732 15.5351 15.5355C16.4728 14.5979 16.9996 13.3261 16.9996 12C16.9996 10.6739 16.4728 9.40215 15.5351 8.46447C14.5974 7.52678 13.3257 7 11.9996 7ZM11.9996 9C12.3936 8.99993 12.7837 9.07747 13.1477 9.22817C13.5117 9.37887 13.8424 9.5998 14.1211 9.87833C14.3997 10.1569 14.6207 10.4875 14.7715 10.8515C14.9224 11.2154 15 11.6055 15.0001 11.9995C15.0002 12.3935 14.9226 12.7836 14.7719 13.1476C14.6212 13.5116 14.4003 13.8423 14.1218 14.121C13.8432 14.3996 13.5126 14.6206 13.1486 14.7714C12.7847 14.9223 12.3946 14.9999 12.0006 15C11.2049 15 10.4419 14.6839 9.87927 14.1213C9.31666 13.5587 9.00059 12.7956 9.00059 12C9.00059 11.2044 9.31666 10.4413 9.87927 9.87868C10.4419 9.31607 11.2049 9 12.0006 9M17.2506 5.5C16.9191 5.5 16.6011 5.6317 16.3667 5.86612C16.1323 6.10054 16.0006 6.41848 16.0006 6.75C16.0006 7.08152 16.1323 7.39946 16.3667 7.63388C16.6011 7.8683 16.9191 8 17.2506 8C17.5821 8 17.9001 7.8683 18.1345 7.63388C18.3689 7.39946 18.5006 7.08152 18.5006 6.75C18.5006 6.41848 18.3689 6.10054 18.1345 5.86612C17.9001 5.6317 17.5821 5.5 17.2506 5.5Z"
+                                fill="#14BFB1" />
+                        </svg>
+
+                    </a>
+                    <a class="p-2 bg-white border border-white hover:border-primary duration-300 ease-in-out rounded-full"
+                        href="https://x.com/" target="_blank" rel="noopener noreferrer"><svg width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.213 5.65593C21.4495 5.99339 20.6399 6.21517 19.811 6.31393C20.6838 5.79072 21.3369 4.96845 21.649 3.99993C20.829 4.48793 19.93 4.82993 18.994 5.01493C18.3646 4.34151 17.5304 3.89489 16.621 3.74451C15.7116 3.59413 14.7779 3.74842 13.9653 4.18338C13.1526 4.61834 12.5064 5.30961 12.1271 6.14972C11.7478 6.98983 11.6568 7.93171 11.868 8.82893C10.2049 8.74597 8.57783 8.31401 7.09257 7.56113C5.60731 6.80825 4.29707 5.75128 3.247 4.45893C2.87538 5.09741 2.68005 5.82317 2.681 6.56193C2.681 8.01193 3.42 9.29293 4.541 10.0429C3.8772 10.0208 3.2281 9.84156 2.647 9.51993V9.57093C2.64697 10.5368 2.98104 11.4729 3.59253 12.2206C4.20403 12.9682 5.05532 13.4814 6.002 13.6729C5.38567 13.8403 4.73928 13.8649 4.112 13.7449C4.37893 14.5763 4.89922 15.3034 5.6 15.8243C6.30078 16.3453 7.14696 16.6339 8.02 16.6499C7.1522 17.3311 6.15871 17.8346 5.09628 18.1318C4.03385 18.429 2.92328 18.514 1.828 18.3819C3.7397 19.6114 5.9651 20.264 8.238 20.2619C15.932 20.2619 20.138 13.8889 20.138 8.36193C20.138 8.18126 20.134 8.00093 20.126 7.82093C20.9444 7.22924 21.6507 6.49645 22.212 5.65693"
+                                fill="#14BFB1" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <p class="text-[14px] border-t-[1px] border-[#BCBCBC] text-center py-5 opacity-70">
+            © 2024, Developed with 🖤 by wewobo </p>
+    </footer>
+
+
+    <!--Js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"
+        integrity="sha512-eP8DK17a+MOcKHXC5Yrqzd8WI5WKh6F1TIk5QZ/8Lbv+8ssblcz7oGC8ZmQ/ZSAPa7ZmsCU4e/hcovqR8jfJqA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const header = document.getElementById("header");
+        const Desktopheader = document.getElementById("desktop_header");
+        const tooglebutton = document.getElementById("show_header");
+        const Hidebutton = document.getElementById("hide_header");
+        const HeroSection = document.getElementById("hero_section");
+
+        // Toggle
+        let toogle = false;
+
+        if (window.innerWidth > 767) {
+            header.style.left = "-768px";
+            document.body.style.overflow = "unset";
+        }
+
+        tooglebutton.addEventListener("click", function () {
+            if (toogle === false) {
+                showSideBar();
+            } else {
+                hideSideBar();
+            }
+        });
+
+        Hidebutton.addEventListener("click", hideSideBar);
+
+        function hideSideBar() {
+            toogle = false;
+            header.style.left = "-768px";
+            document.body.style.overflow = "unset";
+        }
+
+        function showSideBar() {
+            toogle = true;
+            header.style.left = "0px";
+            document.body.style.overflow = "hidden";
+        }
+
+        // Sticky Navbar
+        window.onscroll = function () {
+            myFunction();
+        };
+
+        function myFunction() {
+            if (document.documentElement.scrollTop > 0) {
+                Desktopheader.classList.add("shadow-md");
+            } else {
+                Desktopheader.classList.remove("shadow-md");
+            }
+        }
+
+        // Testimonial Slick Slider
+
+        $(".testimonial_slider").slick({
+            prevArrow: $(".slick-prev"),
+            nextArrow: $(".slick-next"),
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true,
+                    },
+                },
+            ],
+        });
+
+    </script>
+
+
+    <!-- <footer></footer> -->
+
+    <script type="text/javascript" src="https://wp.yogamu.in/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18"
+        id="wp-hooks-js"></script>
+    <script type="text/javascript" src="https://wp.yogamu.in/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6"
+        id="wp-i18n-js"></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+        /* <![CDATA[ */
+        wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="https://wp.yogamu.in/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8"
+        id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+        /* <![CDATA[ */
+        var wpcf7 = { "api": { "root": "https:\/\/wp.yogamu.in\/index.php\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="https://wp.yogamu.in/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8"
+        id="contact-form-7-js"></script>
+
+</body>
+
+</html>
