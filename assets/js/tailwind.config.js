@@ -8,6 +8,10 @@ tailwind.config = {
       xl: "1280px",
       "2xl": "1536px",
     },
+    fontFamily: {
+      varela: "Varela",
+      lato: "Lato",
+    },
     extend: {
       animation: {
         "spin-slow": "spin 10s linear infinite",

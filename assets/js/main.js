@@ -40,7 +40,7 @@ window.onscroll = function () {
 };
 
 function myFunction() {
-  if (document.documentElement.scrollTop > 0) {
+  if (document.documentElement.scrollTop > 20) {
     Desktopheader.classList.add("shadow-md");
     Desktopheader.classList.add("bg-secondary");
   } else {
@@ -69,4 +69,10 @@ $(".testimonial_slider").slick({
       },
     },
   ],
+});
+
+// current slug assign url to link element's attribute where rel="canoncial" js
+$(document).ready(function () {
+  var currentSlug = window.location;
+  $('link[rel="canonical"]').attr("href", currentSlug);
 });
