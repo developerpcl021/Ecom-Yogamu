@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the header
  *
@@ -7,24 +8,25 @@
  * @package HelloElementor
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+if (! defined('ABSPATH')) {
+    exit; // Exit if accessed directly.
 }
 
-$viewport_content = apply_filters( 'hello_elementor_viewport_content', 'width=device-width, initial-scale=1' );
-$enable_skip_link = apply_filters( 'hello_elementor_enable_skip_link', true );
-$skip_link_url = apply_filters( 'hello_elementor_skip_link_url', '#content' );
+$viewport_content = apply_filters('hello_elementor_viewport_content', 'width=device-width, initial-scale=1');
+$enable_skip_link = apply_filters('hello_elementor_enable_skip_link', true);
+$skip_link_url = apply_filters('hello_elementor_skip_link_url', '#content');
 $theme_path = get_stylesheet_directory_uri();
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
-	
-	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="<?php echo esc_attr($viewport_content); ?>">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -90,45 +92,44 @@ $theme_path = get_stylesheet_directory_uri();
         }
     </style>
 </head>
+
 <body <?php body_class(); ?>>
 
-<?php wp_body_open(); ?>
+    <?php wp_body_open(); ?>
 
-<?php if ( $enable_skip_link ) { ?>
-<a class="skip-link screen-reader-text" href="<?php echo esc_url( $skip_link_url ); ?>"><?php echo esc_html__( 'Skip to content', 'hello-elementor' ); ?></a>
-<?php } ?>
+    <?php if ($enable_skip_link) { ?>
+        <a class="skip-link screen-reader-text" href="<?php echo esc_url($skip_link_url); ?>"><?php echo esc_html__('Skip to content', 'hello-elementor'); ?></a>
+    <?php } ?>
 
     <!-- navbar -->
     <div class="max-w-[1140px] top-0 left-[-768px] md:hidden ease-in-out duration-300 bg-primary text-white z-[999] flex items-start justify-between fixed mx-auto p-6 w-3/4 h-full"
         id="header">
         <ul id="menu-navbar" class="space-y-4">
-            <li class="font-varela font-medium text-base text-white/90 hover:text-primary duration-300">
-                <a href="#">
+            <li>
+                <a href="#Home" class="font-varela font-medium text-base text-white/90 hover:text-white/75 duration-300">
                     Home
                 </a>
             </li>
-            <li class="font-varela font-medium text-base text-white/90 hover:text-primary duration-300">
-                <a href="#">
-                    About
+            <li>
+                <a href="#About"
+                    class="font-varela font-medium text-base text-white/90 hover:text-white/75 duration-300">
+                    Aboutus
                 </a>
             </li>
-            <li class="font-varela font-medium text-base text-white/90 hover:text-primary duration-300">
-                <a href="#">
-                    Us
-                </a>
-            </li>
-            <li class="font-varela font-medium text-base text-white/90 hover:text-primary duration-300">
-                <a href="#">
+            <li>
+                <a href="#Product"
+                    class="font-varela font-medium text-base text-white/90 hover:text-white/75 duration-300">
                     Product
                 </a>
             </li>
-            <li class="font-varela font-medium text-base text-white/90 hover:text-primary duration-300">
-                <a href="#">
+            <li>
+                <a href="#Blog" class="font-varela font-medium text-base text-white/90 hover:text-white/75 duration-300">
                     Blog
                 </a>
             </li>
-            <li class="font-varela font-medium text-base text-white/90 hover:text-primary duration-300">
-                <a href="#">
+            <li>
+                <a href="#Contact"
+                    class="font-varela font-medium text-base text-white/90 hover:text-white/75 duration-300">
                     Contact
                 </a>
             </li>
@@ -146,7 +147,7 @@ $theme_path = get_stylesheet_directory_uri();
         <nav>
             <div class="container z-20 relative mx-auto py-5 ease-in-out duration-300">
                 <div class="flex items-center justify-between">
-                    <a href class="p-2">
+                    <a href="<?php echo get_home_url(); ?>" class="p-2">
                         <svg class="w-14 h-14" width="21" height="22" viewBox="0 0 21 22" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -160,7 +161,7 @@ $theme_path = get_stylesheet_directory_uri();
 
                     <ul id="menu-navbar-1" class="hidden md:flex items-center gap-x-4 lg:gap-x-16">
                         <li>
-                            <a href="#Home"
+                            <a href="<?php echo get_home_url(); ?>"
                                 class="font-varela font-medium text-base text-black/60 hover:text-primary duration-300">
                                 Home
                             </a>
@@ -215,4 +216,3 @@ $theme_path = get_stylesheet_directory_uri();
         </nav>
     </header>
     <!-- navbar -->
-

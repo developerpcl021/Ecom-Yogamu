@@ -310,6 +310,18 @@ get_header();
                                     }
                                     ?>
                                 </span>
+                                <!-- Add to Cart Button -->
+                                <style>
+                                    button.single_add_to_cart_button {
+                                        @apply bg-primary text-white font-bold py-2 px-4 rounded;
+                                    }
+                                </style>
+                                <div class="mt-4">
+                                    <?php
+                                    // Display WooCommerce "Add to Cart" button
+                                    woocommerce_template_loop_add_to_cart();
+                                    ?>
+                                </div>
                             </div>
                         </div>
                 <?php
