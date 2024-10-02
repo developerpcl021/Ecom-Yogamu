@@ -7,92 +7,6 @@ $theme_path = get_stylesheet_directory_uri();
 get_header();
 ?>
 
-<!doctype html>
-<html lang="en-US">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="https://gmpg.org/xfn/11">
-    <meta name='robots' content='max-image-preview:large' />
-    <title>Yogamu | Your Journey to Inner Peace and Well-being</title>
-    <!-- Sets the canonical URL to avoid duplicate content issues -->
-    <link rel="canonical" href="#" />
-    <meta name="description"
-        content="Discover peace, strength, and balance through Yogamu's guided yoga and meditation classes for holistic well-being.">
-    <meta name="keywords"
-        content="Yoga, Mindfulness, Meditation, Wellness, Spiritual Growth, Yoga Classes, Fitness, Inner Peace, Holistic Health">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- confiq file -->
-    <script src="<?php echo $theme_path; ?>/assets/js/tailwindlocal.js"></script>
-    <script src="<?php echo $theme_path; ?>/assets/js/tailwind.config.js"></script>
-    <!-- custom css -->
-    <link rel="stylesheet" href="<?php echo $theme_path; ?>/assets/styles/index.css">
-
-    <style>
-        /*  "Varela"  */
-        @font-face {
-            font-family: "Varela";
-            src: url("<?php echo $theme_path; ?>/assets/fonts/varela/Varela-Regular.ttf");
-        }
-
-        /*  "Lato"  */
-        @font-face {
-            font-family: "Lato";
-            src: url("<?php echo $theme_path; ?>/assets/fonts/Lato/Lato-Light.ttf");
-            font-weight: 300;
-        }
-
-        @font-face {
-            font-family: "Lato";
-            src: url("<?php echo $theme_path; ?>/assets/fonts/Lato/Lato-Regular.ttf");
-            font-weight: 400;
-        }
-
-        @font-face {
-            font-family: "Lato";
-            src: url("<?php echo $theme_path; ?>/assets/fonts/Lato/Lato-Bold.ttf");
-            font-weight: 700;
-        }
-
-        @font-face {
-            font-family: "Lato";
-            src: url("<?php echo $theme_path; ?>/assets/fonts/Lato/Lato-Black.ttf");
-            font-weight: 900;
-        }
-
-        .slick-prev:before,
-        .slick-next:before {
-            display: none !important;
-        }
-
-        .slick-slide {
-            margin: 0 12px !important;
-        }
-
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        .slick-prev,
-        .slick-next {
-            width: 52px !important;
-        }
-
-        .slick-prev {
-            left: 0% !important;
-        }
-    </style>
-</head>
-
-<body>
     <!-- Hero section -->
     <section
         class="min-h-screen flex items-center bg-[url(<?php echo $theme_path; ?>/assets/image/png&jpg/hero-banner1.jpg)] bg-center bg-cover bg-no-repeat">
@@ -316,7 +230,7 @@ get_header();
                                         @apply bg-primary text-white font-bold py-2 px-4 rounded;
                                     }
                                 </style>
-                                <div class="mt-4">
+                                <div class="pt-2 space-x-3 font-varela font-semibold text-base capitalize">
                                     <?php
                                     // Display WooCommerce "Add to Cart" button
                                     woocommerce_template_loop_add_to_cart();

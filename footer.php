@@ -17,7 +17,7 @@ wp_footer(); ?>
 
 <!-- Footer -->
 <footer class="mt-10 pt-10  bg-secondary">
-	<div class="container">
+	<div class="container px-4 mx-auto">
 		<div class="md:text-center space-y-2">
 			<a href class="p-2 inline-block">
 				<svg class="w-14 h-14" width="21" height="22" viewBox="0 0 21 22" fill="none"
